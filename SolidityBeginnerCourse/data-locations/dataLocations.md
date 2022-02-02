@@ -19,7 +19,7 @@ En este contrato, la variable local `myMemstruct` (línea 19), así como el par�
 ### Calldata
 *Calldata* almacena los argumentos de las funciones. Como en *memory*, *calldata* solamente se almacena temporalmente durante la ejecución de una función externa. En contraste con valores almacenados en *memory*, valores almacenados en *calldata* no pueden cambiarse. Calldata es la localización de data más asequible.
 
-En este contrato, el parámetro `_arr` (line 35) tiene la localización de data *calldata*. Si queremos asignar un nuevo valor al primer elemento de la colección `_arr`, podríamos hacerlo en la `function g` (línea 31) pero no en la `function h` (line 35). Esto es porque  `_arr` en la  `function g` tiene la localización de data  *memory* y *function h* tiene la localización de data `calldata`.
+En este contrato, el parámetro `_arr` (line 35) tiene la localización de data *calldata*. Si queremos asignar un nuevo valor al primer elemento de la matriz `_arr`, podríamos hacerlo en la `function g` (línea 31) pero no en la `function h` (line 35). Esto es porque  `_arr` en la  `function g` tiene la localización de data  *memory* y *function h* tiene la localización de data `calldata`.
 
 ## Misiones
 
